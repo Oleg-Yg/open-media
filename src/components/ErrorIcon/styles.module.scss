@@ -1,0 +1,25 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #C6A827;
+  border-radius: 50%;
+
+  .rectangle {
+    width: 2px;
+    height: 6px;
+    background: #C6A827;
+    border-radius: 2px;
+    margin-bottom: 2px;
+  }
+
+  .point {
+    width: 2px;
+    height: 2px;
+    background: #C6A827;
+    border-radius: 50%;
+  }
+}

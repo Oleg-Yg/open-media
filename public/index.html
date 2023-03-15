@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+            name="description"
+            content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div class="wrapper-content">
+    <div class="card-audio-player">
+        <div class="card-audio-player__text">
+            <span class="card-audio-player__title">Play any audio sources directly in the browser!</span>
+            <span class="card-audio-player__description">Without any restrictions for free</span>
+            <span class="card-audio-player__legal-text">By uploading the audio file, you agree to our</span>
+            <a href="https://en.wikipedia.org/wiki/Terms_of_service" class="card-audio-player__legal-link">Terms of
+                Service.</a>
+        </div>
+        <span class="mobile__card-audio-player__title">Play any audio sources directly in the browser!</span>
+        <div class="card-audio-player__main">
+            <div id="root" class="root"></div>
+        </div>
+        <span class="mobile__card-audio-player__description">Without any restrictions for free</span>
+        <span class="mobile__card-audio-player__legal-text">By uploading the audio file, you agree to our</span>
+        <a href="https://en.wikipedia.org/wiki/Terms_of_service" class="mobile__card-audio-player__legal-link">Terms of
+            Service.</a>
+    </div>
+    <div class="content">
+        <div class="content__main">
+            <div class="content__text">
+                <span class="content__text__title">How It Works</span>
+                <span class="content__text__description">Lorem Ipsum is a "fish" text often used in print and web design. Lorem Ipsum has been the standard "fish" for Latin texts since the early 16th century. At that time, an unnamed printer created a large collection of font sizes and shapes, using Lorem Ipsum for print samples.</span>
+            </div>
+            <div class="content__illustration__wrapper">
+                <div class="content__illustration">
+                    <div class="content__illustration__rectangle-block"></div>
+                    <div class="content__illustration__group-line">
+                        <div class="content__illustration__line"></div>
+                        <div class="content__illustration__line-block"></div>
+                    </div>
+                    <div class="content__illustration__group-rectangle">
+                        <div class="content__illustration__group-rectangle__rectangle">
+                            <img class="content__illustration__icon" src="static/icons/AWS.png"/>
+                        </div>
+                        <div class="content__illustration__group-rectangle__rectangle">
+                            <img class="content__illustration__icon" src="static/icons/Сloud.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="technical-requirements">
+            <span class="technical-requirements__title">Technical requirements</span>
+            <div class="technical-requirements__tabs">
+                <button class="technical-requirements__tab active" data-tab="#tab_1">Own server</button>
+                <button class="technical-requirements__tab" data-tab="#tab_2">Amazon Instance</button>
+            </div>
+            <!--Первый таб-->
+            <div class="technical-requirements__tables active" id="tab_1">
+                <table class="technical-requirements__table">
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td first-cell">OS + apps</td>
+                        <td class="technical-requirements__table__td">Unix/OSX + docker + nvidia-docker</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">CPU</td>
+                        <td class="technical-requirements__table__td">4 cores or more (e.g. intel core i5)</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">Memory</td>
+                        <td class="technical-requirements__table__td">16 GB RAM</td>
+                    </tr>
+                </table>
+                <table class="technical-requirements__table">
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td  first-cell">Free space</td>
+                        <td class="technical-requirements__table__td">100 GB of free space</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">Graphics hardware</td>
+                        <td class="technical-requirements__table__td">GPU: NVidia only 2Gb+</td>
+                    </tr>
+                </table>
+            </div>
+            <!--Второй таб-->
+            <div class="technical-requirements__tables" id="tab_2">
+                <table class="technical-requirements__table">
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td first-cell">Instance</td>
+                        <td class="technical-requirements__table__td">g4dn.xlarge</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">GPU</td>
+                        <td class="technical-requirements__table__td">1</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">vCPUs</td>
+                        <td class="technical-requirements__table__td">4</td>
+                    </tr>
+                </table>
+                <table class="technical-requirements__table">
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td  first-cell">Memory</td>
+                        <td class="technical-requirements__table__td">16 GB RAM</td>
+                    </tr>
+                    <tr class="technical-requirements__table__tr">
+                        <td class="technical-requirements__table__td">Storage</td>
+                        <td class="technical-requirements__table__td">125 GB</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="tabs.js"></script>
+</body>
 </html>

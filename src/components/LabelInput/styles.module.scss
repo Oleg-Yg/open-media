@@ -1,0 +1,49 @@
+.wrapperLabel {
+  display: flex;
+  margin-bottom: 8px;
+
+  .label {
+    display: flex;
+    align-items: center;
+    max-width: 524px;
+    flex-grow: 1;
+    background: white;
+    padding: 32px 16px;
+
+    .input {
+      width: 100%;
+      font-family: 'Space Grotesk';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: -0.4px;
+      border: none;
+      outline: none;
+      color: #A4A3A4;
+      background: transparent;
+      margin-right: 12px;
+    }
+  }
+
+  .button {
+    width: 96px;
+    height: 96px;
+    background: #F8D231;
+    border: none;
+    cursor: pointer;
+
+    .icon {
+      width: 40px;
+      height: 36px;
+    }
+  }
+}
+
+.errorMassage {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.3px;
+  color: #C6A827;
+}

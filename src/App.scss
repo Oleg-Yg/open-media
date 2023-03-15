@@ -1,0 +1,33 @@
+.App {
+
+}
+
+.title {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #1B191C;
+  margin-bottom: 20px;
+}
+
+.back {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  color: #1B191C;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.backIcon {
+  width: 14px;
+  margin-right: 2px;
+}
